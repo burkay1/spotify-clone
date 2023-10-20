@@ -1,0 +1,442 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
+}
+i {
+  margin: 25px 0 0 17px;
+  color: #dbdbdba2;
+}
+i:hover {
+  color: white;
+  cursor: pointer;
+}
+
+i ~ span {
+  color: #c5c5c5cc;
+}
+span {
+  margin-left: 8px;
+  font-weight: bold;
+}
+body {
+  background-color: black;
+}
+ul {
+  list-style: none;
+  line-height: 2rem;
+}
+
+li {
+  color: #a4a7a7;
+}
+
+li:hover {
+  cursor: pointer;
+  color: white;
+  text-decoration: underline;
+}
+
+img {
+  width: 140px;
+  height: 140px;
+  flex: 2;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.song {
+  border-radius: 10px;
+  transition: background-color 0.34s ease 0s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.song-title {
+  flex: 1;
+  font-weight: bold;
+  position: relative;
+  right: 20px;
+}
+.song .song-description {
+  flex: 2;
+  color: #a4a7a7;
+  font-size: 13px;
+  position: relative;
+  left: 13px;
+}
+
+.main-container {
+  background-color: #1e1e1e;
+  width: 73%;
+  height: 1400px;
+  position: absolute;
+  right: 2%;
+  top: 14.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.main-container-item {
+  background-color: #1e1e1e;
+  border-radius: 20px;
+}
+
+.song:hover {
+  background-color: #303030;
+}
+
+.song-play-icon {
+  position: relative;
+  bottom: 100px;
+  left: 47px;
+  opacity: 0;
+  transition: opacity 0.34s ease 0s;
+  transition: bottom 0.34s ease 0s;
+  z-index: 1;
+}
+
+.song:hover > i {
+  opacity: 100%;
+  bottom: 120px;
+}
+
+.playlist-1 {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.playlist-1-header {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.show-all {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 16px;
+  margin: 17px 17px 0 0;
+  color: rgba(190, 190, 190, 0.836);
+}
+
+.show-all:hover {
+  cursor: pointer;
+}
+.spotify-playlists {
+  margin: 10px 0 0 20px;
+  font-weight: bold;
+  font-size: 22px;
+  text-transform: capitalize;
+}
+
+.spotify-playlists:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.playlist-1-songs {
+  flex: 5;
+  display: flex;
+  justify-content: space-around;
+}
+.playlist-1-song {
+  background-color: #222222;
+  flex-basis: 170px;
+  height: 230px;
+}
+.playlist-2 {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.playlist-2-header {
+  flex: 1;
+  margin: 10px 0 0 20px;
+  font-weight: bold;
+  font-size: 22px;
+  text-transform: capitalize;
+}
+
+.playlist-2-header:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.playlist-2-songs {
+  display: flex;
+  flex: 5;
+  justify-content: space-around;
+}
+
+.playlist-2-song {
+  background-color: #222222;
+  flex-basis: 170px;
+  height: 230px;
+}
+.footer-1 {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-1-first-column {
+  flex: 2;
+  margin-left: 40px;
+}
+
+.footer-1-second-column {
+  flex: 2;
+}
+
+.footer-1-third-column {
+  flex: 5;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+.footer-2 {
+  flex: 1.4;
+}
+
+.copyright {
+  flex: 1;
+}
+
+.left-sidebar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 24%;
+  height: 95%;
+  margin: 1% 4px;
+  gap: 10px;
+}
+
+.sidebar-container {
+  margin: 10px 10px 5px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+  background-color: #121212;
+}
+
+.sidebar-container-item {
+  color: white;
+  height: 33.3%;
+}
+
+.sidebar-container-item:hover > * {
+  color: white;
+  cursor: pointer;
+}
+
+.library-container-item {
+  color: white;
+  background-color: #121212;
+  height: 25%;
+}
+
+.logo-box {
+  flex: 1;
+  border-radius: 20px;
+}
+
+.library-container {
+  flex: 2;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #151515;
+}
+
+.library-div {
+  margin: 20px 4px 0 10px;
+}
+
+.library-footer {
+  margin-left: 20px;
+}
+
+.links-list {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 2em;
+  color: rgba(190, 190, 190, 0.836);
+}
+
+.links-list:hover {
+  cursor: pointer;
+}
+
+.language-box {
+  display: inline;
+  padding: 9px 18px 9px 0;
+  margin-left: 20px;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.463);
+}
+.language-box:hover {
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.language-text {
+  color: white;
+}
+
+.create-playlist {
+  font-weight: bold;
+  background-color: #272626;
+  border-radius: 20px;
+  margin: 10px;
+  position: relative;
+  bottom: 20px;
+}
+.create-playlist-text {
+  position: relative;
+  top: 13px;
+  left: 10px;
+}
+
+.create-playlist p {
+  position: relative;
+  top: 30px;
+  left: 18px;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.top-bar {
+  background-color: #121212;
+  position: fixed;
+  top: 0;
+  right: 2%;
+  width: 73%;
+  height: 11.5%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  border-radius: 10px;
+}
+
+.top-bar-item {
+  flex: 1;
+  color: rgba(190, 190, 190, 0.836);
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.top-bar-item:hover {
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.divider-stick {
+  flex: 0.2;
+}
+.divider-stick:hover {
+  color: rgba(190, 190, 190, 0.836);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.arrows {
+  flex: 3;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.arrows:hover {
+  font-size: 16px;
+}
+
+.sign-up {
+  margin-left: 20px;
+}
+
+.plus-icon {
+  position: relative;
+  left: 45px;
+}
+
+.plus-icon:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.logo > * {
+  color: white;
+}
+
+.list-header {
+  font-weight: bold;
+  color: white;
+}
+
+.list-header:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  cursor: text;
+}
+
+.useful-links-list {
+  list-style: none;
+  margin-left: 40px;
+}
+.copyright-text {
+  color: rgba(190, 190, 190, 0.836);
+  font-size: 15px;
+  margin-left: 40px;
+}
+
+.memories {
+  right: 32px;
+}
+
+.emptycore {
+  right: 27px;
+}
+
+.rock-on-the-road {
+  right: 2px;
+}
+.car-image {
+  height: 140px;
+  width: 140px;
+}
+
+.first-description {
+  margin-right: 29px;
+}
+
+.second-description {
+  margin-left: 5px;
+}
+.discover-image {
+  height: 131px;
+}
+
+.third-title {
+  margin-right: 30px;
+}
+
+.third-description {
+  margin: 0 14px 12px 2px;
+}
+
+.fourth-description {
+  margin-right: 40px;
+}
